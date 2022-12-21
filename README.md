@@ -14,13 +14,18 @@ This repository follows the MVC paradigm and thus contains the routes, views, ja
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Testing] (#testing)
 - [Contributing](#contributing)
 - [License](#license)
 - [Questions](#questions)
 
 ### The following image shows the web application's appearance and functionality:
 
+![screenshot](https://github.com/rashida53/tech-blog/blob/main/tech-blog-2.png?raw=true)
+
 ![screenshot](https://github.com/rashida53/tech-blog/blob/main/tech-blog.png?raw=true)
+
+![screenshot](https://github.com/rashida53/tech-blog/blob/main/tech-blog-3.png?raw=true)
 
 ## [**Installation**](#table-of-contents)
 
@@ -31,6 +36,12 @@ This application has been deployed on Heroku and can be run on any machine using
 
 ## [**Usage**](#table-of-contents)
 The tech blog maintains a database of blogposts using Sequelize and their comments associated to the posts. A user can create an account, login to their dashboard and add a post. Within the dashboard the user can delete a post and click on the post to update it. They can visit the homepage through the navbar that displays all users posts. A logged in user can add comments on any posts in the homepage.
+
+## [**Testing**](#table-of-contents)
+In order to test this application and view existing blogposts, one can sign in using the login credentials from the `userData.json` which are as follows:
+
+`username`: sal@hotmail.com
+`password`: password12345
 
 
 ## [**License**](#table-of-contents)
