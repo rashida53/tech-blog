@@ -31,8 +31,6 @@ router.get('/blogposts/:id', async (req, res) => {
         {
           model: User,
           attributes: ['username']
-          // model: Comment,
-          // attributes: ['content', 'id', 'date_created', 'user_id']
         },
       ],
     });
@@ -115,7 +113,6 @@ router.get('/updates/:id', withAuth, async (req, res) => {
 });
 
 router.put('/updates/blog/:id', withAuth, async (req, res) => {
-  console.log("Calling update");
   try {
     console.log(req.body);
     const blogpostData = await Blogpost.update(
