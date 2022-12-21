@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2>{{title}}</h2>
+            <p> Created by {{user.username}} on {{format_date date_created}}</p>
+            <p>{{content}}</p>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2>
+                Update Post
+            </h2>
+            <form class="form edit-post-form">
+                <label for="title">
+                    Title:
+                </label>
+                <br />
+                <textarea id="title" name="title" rows="2" cols="30">
+          {{title}}
+        </textarea>
+                <br />
+                <label for="content">
+                    Content:
+                </label>
+                <br />
+                <textarea id="content" name="content" rows="5" cols="30">
+          {{content}}
+        </textarea>
+                <br />
+                <button class="btn btn-sm btn-danger update-button" data-id="{{id}}">UPDATE POST</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="/js/update.js"></script>

@@ -1,0 +1,11 @@
+<!-- Loop over each object in the projects array -->
+{{#each blogposts as |blogpost| }}
+<div class="row mb-4 project">
+  <div class="col-md-12">
+    <h2>
+      <a href="/blogposts/{{blogpost.id}}">{{blogpost.title}}</a>
+    </h2>
+    <p>Created by {{user.username}} on {{format_date blogpost.date_created}}</p>
+  </div>
+</div>
+{{/each}}
