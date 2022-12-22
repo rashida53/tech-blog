@@ -21,8 +21,6 @@ const commentFormHandler = async (event) => {
 };
 
 const commentDeleteHandler = async (event) => {
-    event.preventDefault();
-
     if (event.target.hasAttribute('data-id')) {
         const commentId = event.target.getAttribute('data-id');
         const blogpost_id = document.querySelector('.add-comment').getAttribute('id');
